@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:atialiased;
+    scroll-behavior: smooth;
+}
+body{
+    background: url(./images/bg.webp);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    transition: 0.25s ease;
+}
+.heading h1,p{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Playfair Display', serif;
+}
+.heading h1{
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+.heading p{
+    font-size: 1rem;
+}
+.sun{
+    position: absolute;
+    left: 42.5%;
+    top: 78%;
+    transition: 1s ease-in-out;
+}
+.sun img{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    position: absolute;
+    width: 128px;
+    animation: spin 30s linear infinite;
+}
+.mercury{
+    position: absolute;
+    margin-top: 0rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    border-color: #333030;
+    border-style: dotted;
+    animation: spin 20s linear infinite;
+    transition: 0.25s ease;
+}
+
+.mercury img{
+    margin-left: 0.5rem;
+    position: absolute;
+    width: 20px;
+}
+.venus{
+    position: absolute;
+    margin-top: -1.2rem;
+    margin-left: -0.3rem;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border-color: #333030;
+    border-style: dotted;
+    animation: spin 25s linear infinite;
+    transition: 0.25s ease;
+}
+.venus img{
+    margin-left: 0.9rem;
+    position: absolute;
+    width: 25px;
+}
+.earth{
+    position: absolute;
+    margin-top: -2.8rem;
+    margin-left: -2rem;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border-color: #333030;
+    border-style: dotted;
+    animation: spin 30s linear infinite;
+    transition: 0.25s ease;
+}
+.earth img{
+    margin-left: 1.8rem;
+    position: absolute;
+    width: 23px;
+}
+.mars{
+    position: absolute;
+    margin-top: -4.3rem;
+    margin-left: -3.5rem;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border-color: #333030;
+    border-style: dotted;
+    animation: spin 45s linear infinite;
+    transition: 0.25s ease;
+}
+.mars img{
+    margin-left: 3.2rem;
+    position: absolute;
+    width: 20px;
+}
+.belt-1{
+    position: absolute;
+    margin-top: -6rem;
+    margin-left: -5rem;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    border-color: white;
+    border-style: dashed;
+    animation: spin 15s linear infinite;
+}
+.belt-1 img{
+    margin-left: 3.2rem;
+    position: absolute;
+    width: 20px;
+}
+.belt-2{
+    position: absolute;
+    margin-top: -6.6rem;
+    margin-left: -5.6rem;
+    border-radius: 50%;
+    height: 370px;
+    width: 370px;
+    border-color: white;
+    border-style: dashed;
+    animation: spin 15s linear infinite;
+}
+.belt-2 img{
+    margin-left: 3.2rem;
+    position: absolute;
+    width: 20px;
+}
+.belt-3{
+    position: absolute;
+    margin-top: -7.2rem;
+    margin-left: -6.2rem;
+    border-radius: 50%;
+    height: 390px;
+    width: 390px;
+    border-color: white;
+    border-style: dashed;
+    animation: spin 15s linear infinite;
+}
+.belt-3 img{
+    margin-left: 3.2rem;
+    position: absolute;
+    width: 20px;
+}
+.jupiter{
+    position: absolute;
+    margin-top: -9.7rem;
+    margin-left: -9rem;
+    border-radius: 50%;
+    height: 480px;
+    width: 480px;
+    border-color: #333030;
+    border-style: dotted;
+    animation: spin 65s linear infinite;
+    transition: 0.25s ease;
+}
+.jupiter img{
+    margin-left: 3.8rem;
+    position: absolute;
+    width: 63px;
+    animation: spin 65s linear infinite;
+}
+.saturn{
+    position: absolute;
+    margin-top: -14.5rem;
+    margin-left: -14.2rem;
+    border-radius: 50%;
+    height: 650px;
+    width: 650px;
+    border-color: #333030;
+    border-style: dotted;
+    animation: spin 70s linear infinite;
+    transition: 0.25s ease;
+}
+.saturn img{
+    margin-left: 6rem;
+    position: absolute;
+    width: 94px;
+}
+.urenus{
+    position: absolute;
+    margin-top: -18.8rem;
+    margin-left: -18.8rem;
+    border-radius: 50%;
+    height: 800px;
+    width: 800px;
+    border-color: #333030;
+    border-style: dotted;
+    animation: spin 90s linear infinite;
+    transition: 0.25s ease;
+}
+.urenus img{
+    margin-left: 14.2rem;
+    position: absolute;
+    width: 30px;
+}
+.neptune{
+    position: absolute;
+    margin-top: -23.4rem;
+    margin-left: -23.5rem;
+    border-radius: 50%;
+    height: 950px;
+    width: 950px;
+    border-color: #333030;
+    border-style: dotted;
+    animation: spin 100s linear infinite;
+    transition: 0.25s ease;
+}
+.neptune img{
+    margin-left: 17rem;
+    position: absolute;
+    width: 30px;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(-359deg);
+    }
+}
+.planets{
+    margin-top: 68rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 4rem;
+    transition: 1s ease-in-out;
+
+}
+.planets a{
+    transition: all 0.25s ease;
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+    text-transform: uppercase;
+
+}
+.planets a:hover{
+    color: grey;
+}
+.card{
+    display: none;
+    position: absolute;
+    margin-left: 73%;
+    margin-top: -3rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+.card p{
+    padding: 0.5rem;
+    justify-content: left;
+}
+.card a{
+    text-decoration: none;
+    color: rgba(67, 107, 252, 0.924);
+    padding-left: 0.5rem;
+}
+.card span{
+    text-transform: uppercase;
+    padding-right: 1rem;
+}
+.cross{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 91.8%;
+    margin-top: -1.6rem;
+    width: 20px;
+}
+.transform{
+    margin-bottom: 4rem;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transform button{
+    padding: 1rem;
+    background: transparent;
+    color: white;
+    border-radius: 5rem;
+    border: solid white;
+    border-width: 1px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    font-size: 1rem;
+    /* transition-delay: 1.5ms; */
+    font-weight: 2rem;
+    transition: 0.25s ease;
+}
+.transform button:hover{
+    background-color: white;
+    border: black;
+    color: black;
+}
